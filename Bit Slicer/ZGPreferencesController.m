@@ -74,6 +74,10 @@
 {
 	self.window.toolbarStyle = NSWindowToolbarStylePreference;
 	
+	// Let the user resize the preferences window however they want, including shrinking it down
+	self.window.minSize = NSZeroSize;
+	self.window.contentMinSize = NSZeroSize;
+	
 	[self.window.toolbar setSelectedItemIdentifier:ZGGeneralPreferenceIdentifier];
 	
 	_scriptsToolbarItem.image = [NSImage imageWithSystemSymbolName:@"text.document" accessibilityDescription:nil];

@@ -71,7 +71,7 @@
 {
 	_languageCodes = [ZGGeneralPreferencesViewController availableLanguageCodes];
 	
-	NSView *containerView = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 360, 118)];
+	NSView *containerView = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 280, 118)];
 	
 	NSTextField *languageLabel = [NSTextField labelWithString:NSLocalizedStringFromTable(@"languagePreferenceLabel", ZGGeneralPreferencesLocalizationTable, nil)];
 	languageLabel.translatesAutoresizingMaskIntoConstraints = NO;

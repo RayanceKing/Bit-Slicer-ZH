@@ -19,3 +19,9 @@
 
 /* Class = "NSToolbarItem"; paletteLabel = "Shortcuts"; ObjectID = "kgo-oj-XB3"; */
 "kgo-oj-XB3.paletteLabel" = "快捷键";
+
+/* Class = "NSToolbarItem"; label = "General"; ObjectID = "G3n-3n-3n1"; */
+"G3n-3n-3n1.label" = "通用";
+
+/* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "G3n-3n-3n1"; */
+"G3n-3n-3n1.paletteLabel" = "通用";

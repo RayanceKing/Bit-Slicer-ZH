@@ -19,3 +19,9 @@
 
 /* Class = "NSToolbarItem"; paletteLabel = "Shortcuts"; ObjectID = "kgo-oj-XB3"; */
 "kgo-oj-XB3.paletteLabel" = "Accesos directos";
+
+/* Class = "NSToolbarItem"; label = "General"; ObjectID = "G3n-3n-3n1"; */
+"G3n-3n-3n1.label" = "General";
+
+/* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "G3n-3n-3n1"; */
+"G3n-3n-3n1.paletteLabel" = "General";

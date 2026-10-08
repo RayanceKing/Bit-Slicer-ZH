@@ -31,6 +31,7 @@
  */
 
 #import "ZGPreferencesController.h"
+#import "ZGGeneralPreferencesViewController.h"
 #import "ZGUpdatePreferencesViewController.h"
 #import "ZGHotKeyPreferencesViewController.h"
 #import "ZGHotKeyCenter.h"
@@ -38,6 +39,7 @@
 #import "ZGAppUpdaterController.h"
 #import "ZGDebuggerController.h"
 
+#define ZGGeneralPreferenceIdentifier @"ZGGeneralPreferenceIdentifier"
 #define ZGSoftwareUpdatePreferenceIdentifier @"ZGSoftwareUpdateIdentifier"
 #define ZGDebuggerHotKeysPreferenceIdentifier @"ZGDebuggerHotKeysIdentifier"
 #define ZGScriptPreferenceIdentifier @"ZGScriptPreferenceIdentifier"
@@ -72,11 +74,11 @@
 {
 	self.window.toolbarStyle = NSWindowToolbarStylePreference;
 	
-	[self.window.toolbar setSelectedItemIdentifier:ZGSoftwareUpdatePreferenceIdentifier];
+	[self.window.toolbar setSelectedItemIdentifier:ZGGeneralPreferenceIdentifier];
 	
 	_scriptsToolbarItem.image = [NSImage imageWithSystemSymbolName:@"text.document" accessibilityDescription:nil];
 	
-	[self setUpdatePreferencesView];
+	[self setGeneralPreferencesView];
 }
 
 - (void)setPreferencesViewController:(NSViewController *)viewController andWindowTitle:(NSString *)windowTitle
@@ -87,6 +89,13 @@
 		self.window.contentView = viewController.view;
 		[self.window setTitle:windowTitle];
 	}
+}
+
+- (void)setGeneralPreferencesView
+{
+	[self
+	 setPreferencesViewController:[[ZGGeneralPreferencesViewController alloc] init]
+	 andWindowTitle:NSLocalizedStringFromTable(@"generalWindowTitle", ZGPreferencesLocalizationTable, nil)];
 }
 
 - (void)setUpdatePreferencesView
@@ -112,7 +121,11 @@
 
 - (IBAction)changePreferencesView:(NSToolbarItem *)toolbarItem
 {
-	if ([toolbarItem.itemIdentifier isEqualToString:ZGSoftwareUpdatePreferenceIdentifier])
+	if ([toolbarItem.itemIdentifier isEqualToString:ZGGeneralPreferenceIdentifier])
+	{
+		[self setGeneralPreferencesView];
+	}
+	else if ([toolbarItem.itemIdentifier isEqualToString:ZGSoftwareUpdatePreferenceIdentifier])
 	{
 		[self setUpdatePreferencesView];
 	}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0B1C2D190F4D1300E80003 /* ZGGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0B1C2D190F4D1300E80002 /* ZGGeneralPreferencesViewController.m */; };
 		72030ADC1B00191400A5621C /* ZGScriptingInterpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = 72030ADB1B00191400A5621C /* ZGScriptingInterpreter.m */; };
 		720844FA24E0715C00F3D449 /* DataInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 720844F924E0715C00F3D449 /* DataInspector.m */; };
 		720844FD24E072DB00F3D449 /* DataInspectorScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 720844FC24E072DB00F3D449 /* DataInspectorScrollView.m */; };
@@ -287,6 +288,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A0B1C2D190F4D1300E80001 /* ZGGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZGGeneralPreferencesViewController.h; path = "Bit Slicer/ZGGeneralPreferencesViewController.h"; sourceTree = "<group>"; usesTabs = 1; };
+		2A0B1C2D190F4D1300E80002 /* ZGGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZGGeneralPreferencesViewController.m; path = "Bit Slicer/ZGGeneralPreferencesViewController.m"; sourceTree = "<group>"; usesTabs = 1; };
 		72030ADA1B00191400A5621C /* ZGScriptingInterpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZGScriptingInterpreter.h; path = "Bit Slicer/ZGScriptingInterpreter.h"; sourceTree = "<group>"; };
 		72030ADB1B00191400A5621C /* ZGScriptingInterpreter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZGScriptingInterpreter.m; path = "Bit Slicer/ZGScriptingInterpreter.m"; sourceTree = "<group>"; };
 		720844F824E0715C00F3D449 /* DataInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DataInspector.h; path = deps/HexFiend/DataInspector.h; sourceTree = "<group>"; };
@@ -1105,6 +1108,8 @@
 			children = (
 				77F115E317D2EDCD009E002A /* ZGPreferencesController.h */,
 				77F115E417D2EDCD009E002A /* ZGPreferencesController.m */,
+				2A0B1C2D190F4D1300E80001 /* ZGGeneralPreferencesViewController.h */,
+				2A0B1C2D190F4D1300E80002 /* ZGGeneralPreferencesViewController.m */,
 				772D121A190E008500800B1B /* ZGUpdatePreferencesViewController.h */,
 				772D121B190E008500800B1B /* ZGUpdatePreferencesViewController.m */,
 				772D1265190E0D8600800B1B /* ZGHotKeyPreferencesViewController.h */,
@@ -1680,6 +1685,7 @@
 				726B7CA91A23F0EE004354BC /* ZGScriptPromptWindowController.m in Sources */,
 				7768064018B96A64007F2CAF /* ZGThreadStates.m in Sources */,
 				77F115E517D2EDCD009E002A /* ZGPreferencesController.m in Sources */,
+				2A0B1C2D190F4D1300E80003 /* ZGGeneralPreferencesViewController.m in Sources */,
 				77F115E817D2EDD9009E002A /* ZGProcessList.m in Sources */,
 				77F115EB17D2EDE3009E002A /* ZGRunningProcess.m in Sources */,
 				77F115EE17D2EDEE009E002A /* ZGRunningProcessObserver.m in Sources */,

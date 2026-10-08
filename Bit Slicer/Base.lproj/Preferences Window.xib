@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24127" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="25098" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24127"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="25098"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,7 +17,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="524" y="518" width="322" height="156"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1470" height="922"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1512" height="948"/>
             <view key="contentView" id="2">
                 <rect key="frame" x="0.0" y="0.0" width="322" height="156"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +26,12 @@
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="WM0-nF-4pf"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="VRz-v5-SJk"/>
+                    <toolbarItem implicitItemIdentifier="A0B1C2D3-E4F5-4A6B-8C7D-9E0F1A2B3C4D" explicitItemIdentifier="ZGGeneralPreferenceIdentifier" label="General" paletteLabel="General" tag="3" image="gearshape" catalog="system" sizingBehavior="auto" autovalidates="NO" selectable="YES" id="G3n-3n-3n1">
+                        <nil key="toolTip"/>
+                        <connections>
+                            <action selector="changePreferencesView:" target="-2" id="G3n-3n-3n2"/>
+                        </connections>
+                    </toolbarItem>
                     <toolbarItem implicitItemIdentifier="839E6014-BACC-4321-8E43-E69F15A411EC" explicitItemIdentifier="ZGSoftwareUpdateIdentifier" label="Updates" paletteLabel="Updates" image="network" catalog="system" sizingBehavior="auto" autovalidates="NO" selectable="YES" id="f0w-AB-SR1">
                         <nil key="toolTip"/>
                         <connections>
@@ -47,6 +52,7 @@
                     </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
+                    <toolbarItem reference="G3n-3n-3n1"/>
                     <toolbarItem reference="f0w-AB-SR1"/>
                     <toolbarItem reference="kgo-oj-XB3"/>
                     <toolbarItem reference="kPj-yB-vNE"/>
@@ -60,6 +66,7 @@
     </objects>
     <resources>
         <image name="character.textbox" catalog="system" width="19" height="14"/>
+        <image name="gearshape" catalog="system" width="16" height="16"/>
         <image name="network" catalog="system" width="15" height="15"/>
     </resources>
 </document>

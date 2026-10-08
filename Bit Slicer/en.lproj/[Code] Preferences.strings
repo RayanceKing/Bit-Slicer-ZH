@@ -7,3 +7,30 @@
 
 /* Window title for Scripts tab */
 "scriptsWindowTitle" = "Scripts";
+
+/* (general preferences) */
+"generalWindowTitle" = "General";
+
+/* (general preferences) */
+"languagePreferenceLabel" = "Language:";
+
+/* (general preferences) */
+"useSystemLanguageMenuItem" = "Use System Setting";
+
+/* (general preferences) */
+"languageRestartDescription" = "The selected language takes effect after relaunching the app.";
+
+/* (general preferences) */
+"relaunchButtonTitle" = "Relaunch";
+
+/* (general preferences) */
+"relaunchAlertTitle" = "Relaunch Bit Slicer now?";
+
+/* (general preferences) */
+"relaunchAlertMessage" = "Bit Slicer needs to relaunch for the language change to take effect.";
+
+/* (general preferences) */
+"relaunchAlertConfirmButton" = "Relaunch";
+
+/* (general preferences) */
+"relaunchAlertLaterButton" = "Later";
